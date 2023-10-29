@@ -109,19 +109,19 @@
 <li>Erstellen oder bearbeiten der Konfigurations-Datei (siehe Beispiel "configuration.xml" ) </li>
 <li></li>
 </ol>
-<p><div class="language-xml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;Configuration&gt;</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&lt;Add</span><span class="w"> </span><span class="na">SourcePath=</span><span class="s">&quot;C:\office2019-pro-plus&quot;</span><span class="w">     </span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="na">OfficeClientEdition=</span><span class="s">&quot;64&quot;</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="na">Channel=</span><span class="s">&quot;PerpetualVL2021&quot;</span><span class="w"> </span><span class="nt">&gt;</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">&lt;Product</span><span class="w"> </span><span class="na">ID=</span><span class="s">&quot;ProPlus2021Volume&quot;</span><span class="nt">&gt;</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">    </span><span class="nt">&lt;Language</span><span class="w"> </span><span class="na">ID=</span><span class="s">&quot;de-de&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="nt">&lt;Language</span><span class="w"> </span><span class="na">ID=</span><span class="s">&quot;en-us&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nt">&lt;/Product&gt;</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">&lt;/Add&gt;</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">&lt;Display</span><span class="w"> </span><span class="na">Level=</span><span class="s">&quot;Full&quot;</span><span class="w"> </span><span class="na">AcceptEULA=</span><span class="s">&quot;TRUE&quot;</span><span class="w"> </span><span class="nt">/&gt;</span><span class="w">  </span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nt">&lt;/Configuration&gt;</span>
-</span></code></pre></div>
-configuration.xml</p>
+<pre><code class="language-xml">&lt;Configuration&gt;
+  &lt;Add SourcePath=&quot;C:\office2019-pro-plus&quot;     
+    OfficeClientEdition=&quot;64&quot;
+    Channel=&quot;PerpetualVL2021&quot; &gt;
+    &lt;Product ID=&quot;ProPlus2021Volume&quot;&gt;
+    &lt;Language ID=&quot;de-de&quot; /&gt;
+    &lt;Language ID=&quot;en-us&quot; /&gt;
+    &lt;/Product&gt;
+  &lt;/Add&gt;
+  &lt;Display Level=&quot;Full&quot; AcceptEULA=&quot;TRUE&quot; /&gt;  
+&lt;/Configuration&gt;
+</code></pre>
+<p>configuration.xml</p>
 <hr />
 <h2 id="outlook">Outlook</h2>
 <hr />
@@ -131,11 +131,11 @@ configuration.xml</p>
 Sie können diese Prüfung für einen lokalen Exchange Server deaktivieren. Gehen Sie zum Registrierungsschlüssel <code>HKEY_CURRENT_USER\Software \Microsoft\Office\16.0\Outlook\AutoDiscover</code> und erstellen Sie einen neuen DWORD-Parameter mit dem Namen <code>ExcludeExplicitO365Endpoint</code> und dem Wert <code>1</code>. Starten Sie Outlook neu.</p>
 </blockquote>
 <p>Mit dem folgenden Befehl können Sie Änderungen an der Registry vornehmen:</p>
-<div class="language-batch highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>reg add HKEY_CURRENT_USER\Software\Microsoft\Office\x.0\Outlook\AutoDiscover /t REG_DWORD /v ExcludeExplicitO365Endpoint /d 1
-</span></code></pre></div>
+<p><code>batch
+ reg add HKEY_CURRENT_USER\Software\Microsoft\Office\x.0\Outlook\AutoDiscover /t REG_DWORD /v ExcludeExplicitO365Endpoint /d 1</code></p>
 <p>oder mit dem Powershell cmdlet:</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">Set-ItemProperty</span> <span class="n">-Path</span> <span class="s2">&quot;HKCU:\Software\Microsoft\Office\16.0\Outlook\AutoDiscover&quot;</span> <span class="n">-Name</span> <span class="s1">&#39;ExcludeExplicitO365Endpoint&#39;</span> <span class="n">-Value</span> <span class="n">1</span> <span class="n">-Type</span> <span class="n">DWORD</span> <span class="err">–</span><span class="n">Force</span>
-</span></code></pre></div>
+<p><code>powershell
+ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Office\16.0\Outlook\AutoDiscover" -Name 'ExcludeExplicitO365Endpoint' -Value 1 -Type DWORD –Force</code></p>
               
             </div>
           </div><footer>
