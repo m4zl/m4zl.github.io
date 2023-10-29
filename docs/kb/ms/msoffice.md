@@ -7,8 +7,6 @@
 
 ### Download Source Files
 
-
-
 1. Download des Office Customization Tool (ODT) in einen Ordner der Wahl (z.B. "C:\\office2019-pro-plus")
 2. Erstellen oder bearbeiten der Konfigurations-Datei (siehe Beispiel "configuration.xml" ) 
 3. 
@@ -42,13 +40,12 @@ configuration.xml
 
 Mit dem folgenden Befehl können Sie Änderungen an der Registry vornehmen:
 
- ```batch
- reg add HKEY_CURRENT_USER\Software\Microsoft\Office\x.0\Outlook\AutoDiscover /t REG_DWORD /v ExcludeExplicitO365Endpoint /d 1
- ```
+```batch
+reg add HKEY_CURRENT_USER\Software\Microsoft\Office\x.0\Outlook\AutoDiscover /t REG_DWORD /v ExcludeExplicitO365Endpoint /d 1
+```
 
- oder mit dem Powershell cmdlet:
+oder mit dem Powershell cmdlet:
 
- ```powershell
- Set-ItemProperty -Path "HKCU:\Software\Microsoft\Office\16.0\Outlook\AutoDiscover" -Name 'ExcludeExplicitO365Endpoint' -Value 1 -Type DWORD –Force
- ```
-
+```powershell
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Office\16.0\Outlook\AutoDiscover" -Name 'ExcludeExplicitO365Endpoint' -Value 1 -Type DWORD –Force
+```
