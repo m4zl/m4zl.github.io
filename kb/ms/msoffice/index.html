@@ -128,7 +128,7 @@ configuration.xml</p>
 <h3 id="deaktivieren-von-office-365-autodiscover-in-outlook">Deaktivieren von Office 365 Autodiscover in Outlook</h3>
 <blockquote>
 <p>Wenn Sie ein Nicht-Office365-Postfach oder ein lokales Exchange-Postfach verwenden, versucht Outlook, Ihr Microsoft-Konto zu erkennen, auch wenn die AutoErmittlung nicht auf Microsoft 365 verweist. 
-Sie können diese Prüfung für einen lokalen Exchange Server deaktivieren. Gehen Sie zum Registrierungsschlüssel HKEY_CURRENT_USER\Software \Microsoft\Office\16.0\Outlook\AutoDiscover und erstellen Sie einen neuen DWORD-Parameter mit dem Namen ExcludeExplicitO365Endpoint und dem Wert 1. Starten Sie Outlook neu.</p>
+Sie können diese Prüfung für einen lokalen Exchange Server deaktivieren. Gehen Sie zum Registrierungsschlüssel <code>HKEY_CURRENT_USER\Software \Microsoft\Office\16.0\Outlook\AutoDiscover</code> und erstellen Sie einen neuen DWORD-Parameter mit dem Namen <code>ExcludeExplicitO365Endpoint</code> und dem Wert <code>1</code>. Starten Sie Outlook neu.</p>
 </blockquote>
 <p>Mit dem folgenden Befehl können Sie Änderungen an der Registry vornehmen:</p>
 <div class="language-batch highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>reg add HKEY_CURRENT_USER\Software\Microsoft\Office\x.0\Outlook\AutoDiscover /t REG_DWORD /v ExcludeExplicitO365Endpoint /d 1
