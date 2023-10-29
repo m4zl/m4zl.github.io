@@ -1,3 +1,19 @@
-site_name: My Docs
+site_name: Mazl`s Knowledgebase
 site_url: https://m4zl.github.io/
-theme: windmill-dark
+theme: 
+  name: readthedocs
+  highlightjs: true
+  prev_next_buttons_location: none
+  hljs_languages:
+    - yaml
+    - rust
+    - powershell
+    - DOS
+  locale: de
+
+nav:
+  - Home: 'index.md'
+  - 'Knowledgebase':
+    - 'Microsoft':
+      - 'Office': 'kb/ms/msoffice.md'
+  - 'About': 'about.md'
