@@ -360,6 +360,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#outlook" class="md-nav__link">
+    Outlook
+  </a>
+  
+    <nav class="md-nav" aria-label="Outlook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disable-office-365-autodiscover-in-outlook" class="md-nav__link">
+    Disable Office 365 Autodiscover in Outlook
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -449,6 +469,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#outlook" class="md-nav__link">
+    Outlook
+  </a>
+  
+    <nav class="md-nav" aria-label="Outlook">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disable-office-365-autodiscover-in-outlook" class="md-nav__link">
+    Disable Office 365 Autodiscover in Outlook
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -473,7 +513,7 @@
 <li>Erstellen oder bearbeiten der Konfigurations-Datei (siehe Beispiel "configuration.xml" ) </li>
 <li></li>
 </ol>
-<div class="language-xml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;Configuration&gt;</span>
+<p><div class="language-xml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">&lt;Configuration&gt;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nt">&lt;Add</span><span class="w"> </span><span class="na">SourcePath=</span><span class="s">&quot;C:\office2019-pro-plus&quot;</span><span class="w">     </span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="na">OfficeClientEdition=</span><span class="s">&quot;64&quot;</span>
 </span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="na">Channel=</span><span class="s">&quot;PerpetualVL2021&quot;</span><span class="w"> </span><span class="nt">&gt;</span>
@@ -485,9 +525,9 @@
 </span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">&lt;Display</span><span class="w"> </span><span class="na">Level=</span><span class="s">&quot;Full&quot;</span><span class="w"> </span><span class="na">AcceptEULA=</span><span class="s">&quot;TRUE&quot;</span><span class="w"> </span><span class="nt">/&gt;</span><span class="w">  </span>
 </span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="nt">&lt;/Configuration&gt;</span>
 </span></code></pre></div>
-<p>configuration.xml</p>
-<p>## Outlook</p>
-<p>### Disable Office 365 Autodiscover in Outlook</p>
+configuration.xml</p>
+<h2 id="outlook">Outlook</h2>
+<h3 id="disable-office-365-autodiscover-in-outlook">Disable Office 365 Autodiscover in Outlook</h3>
 <blockquote>
 <p>Wenn Sie ein Nicht-Office365-Postfach oder ein lokales Exchange-Postfach verwenden, versucht Outlook, Ihr Microsoft-Konto zu erkennen, auch wenn die AutoErmittlung nicht auf Microsoft 365 verweist. 
 Sie können diese Prüfung für einen lokalen Exchange Server deaktivieren. Gehen Sie zum Registrierungsschlüssel HKEY_CURRENT_USER\Software \Microsoft\Office\16.0\Outlook\AutoDiscover und erstellen Sie einen neuen DWORD-Parameter mit dem Namen ExcludeExplicitO365Endpoint und dem Wert 1. Starten Sie Outlook neu.</p>
