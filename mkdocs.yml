@@ -1,9 +1,8 @@
 site_name: Mazl`s Knowledgebase
 site_url: https://m4zl.github.io/
 theme: 
-  name: terminal
+  name: readthedocs
   features:
-    - navigation.side.indexes
   highlightjs: true
   prev_next_buttons_location: none
   hljs_languages:
@@ -15,17 +14,13 @@ theme:
 
 markdown_extensions:
   - toc:
-      baselevel: "0"
-      toc_depth: "1"
       permalink: "⚓"
 
 nav:
   - home: 'index.md'
   - 'knowledgebase':
     - 'microsoft': 
-      - Index: 'kb/ms/index.md'
       - 'office': 'kb/ms/msoffice.md'
     - 'dell':
-      - Index: 'kb/dell/index.md'
       - 'dockingstationen': 'kb/dell/delldocks.md'
   - 'about': 'about.md'
