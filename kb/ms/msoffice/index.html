@@ -19,7 +19,7 @@
 
     
  
-<title>Office - Mazl`s Knowledgebase</title>
+<title>office - Mazl`s Knowledgebase</title>
 
 
 <link href="../../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
@@ -93,7 +93,7 @@
                 
                 <li property="itemListElement" typeof="ListItem">
                     <a href="../../.." class="menu-item " property="item" typeof="WebPage">
-                        <span property="name">Home</span>
+                        <span property="name">home</span>
                     </a>
                     <meta property="position" content="0">
                 </li>
@@ -103,7 +103,7 @@
                 
                 <li property="itemListElement" typeof="ListItem">
                     <a href="../../../about/" class="menu-item " property="item" typeof="WebPage">
-                        <span property="name">About</span>
+                        <span property="name">about</span>
                     </a>
                     <meta property="position" content="1">
                 </li>
@@ -142,7 +142,7 @@
         
             <a class="
 
-    terminal-mkdocs-side-nav-item" href="../../..">Home</a>
+    terminal-mkdocs-side-nav-item" href="../../..">home</a>
         
     
     
@@ -172,7 +172,7 @@
         
     
 
-    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">Knowledgebase</span>
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">knowledgebase</span>
     
     
         
@@ -184,17 +184,19 @@
             
                 
                 
-                    
-                
             
 
-            
+             
                 <li class="terminal-mkdocs-side-nav-li-ul-li">
     
         
-        <a class="
+        <span class="
+        
+            
+        
+    
 
-    terminal-mkdocs-side-nav-item--active" href="../">Microsoft</a>
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">microsoft</span>
     
     </li>
             
@@ -203,17 +205,23 @@
             
                 
                 
-                    
-                
             
 
-            
+             
                 <li class="terminal-mkdocs-side-nav-li-ul-li">
     
         
-        <a class="
+        
+            
+            
+            <span class="
+        
+            
+        
+    
 
-    terminal-mkdocs-side-nav-item" href="../../dell/">Dell</a>
+    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">dell</span>
+        
     
     </li>
             
@@ -235,7 +243,7 @@
         
             <a class="
 
-    terminal-mkdocs-side-nav-item" href="../../../about/">About</a>
+    terminal-mkdocs-side-nav-item" href="../../../about/">about</a>
         
     
     
@@ -255,11 +263,11 @@
 </aside>
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
-    <h0 id="_1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Microsoft_Office_2013-2019_logo_and_wordmark.svg/800px-Microsoft_Office_2013-2019_logo_and_wordmark.svg.png" alt="drawing" width="350"/></h0>
+    <h0 id="_1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Microsoft_Office_2013-2019_logo_and_wordmark.svg/800px-Microsoft_Office_2013-2019_logo_and_wordmark.svg.png" alt="drawing" width="350"/><a class="headerlink" href="#_1" title="Permanent link">permalink</a></h0>
 <hr />
-<h1 id="c2r-installationen">C2R Installationen</h1>
+<h1 id="c2r-installationen">C2R Installationen<a class="headerlink" href="#c2r-installationen" title="Permanent link">permalink</a></h1>
 <hr />
-<h2 id="download-source-files">Download Source Files</h2>
+<h2 id="download-source-files">Download Source Files<a class="headerlink" href="#download-source-files" title="Permanent link">permalink</a></h2>
 <ol>
 <li>Download des Office Customization Tool (ODT) in einen Ordner der Wahl (z.B. "C:\office2019-pro-plus")</li>
 <li>Erstellen oder bearbeiten der Konfigurations-Datei (siehe Beispiel "configuration.xml" ) </li>
@@ -279,9 +287,9 @@
 </code></pre>
 <p>configuration.xml</p>
 <hr />
-<h1 id="outlook">Outlook</h1>
+<h1 id="outlook">Outlook<a class="headerlink" href="#outlook" title="Permanent link">permalink</a></h1>
 <hr />
-<h2 id="deaktivieren-von-office-365-autodiscover-in-outlook">Deaktivieren von Office 365 Autodiscover in Outlook</h2>
+<h2 id="deaktivieren-von-office-365-autodiscover-in-outlook">Deaktivieren von Office 365 Autodiscover in Outlook<a class="headerlink" href="#deaktivieren-von-office-365-autodiscover-in-outlook" title="Permanent link">permalink</a></h2>
 <blockquote>
 <p>Wenn Sie ein Nicht-Office365-Postfach oder ein lokales Exchange-Postfach verwenden, versucht Outlook, Ihr Microsoft-Konto zu erkennen, auch wenn die AutoErmittlung nicht auf Microsoft 365 verweist. 
 Sie können diese Prüfung für einen lokalen Exchange Server deaktivieren. Gehen Sie zum Registrierungsschlüssel <code>HKEY_CURRENT_USER\Software \Microsoft\Office\16.0\Outlook\AutoDiscover</code> und erstellen Sie einen neuen DWORD-Parameter mit dem Namen <code>ExcludeExplicitO365Endpoint</code> und dem Wert <code>1</code>. Starten Sie Outlook neu.</p>
