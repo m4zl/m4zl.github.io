@@ -3,18 +3,18 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://m4zl.github.io/kb/ms/msoffice/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://m4zl.github.io/kb/dell/delldocks/" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>Office - Mazl`s Knowledgebase</title>
+    <title>Dockingstationen - Mazl`s Knowledgebase</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Office";
-        var mkdocs_page_input_path = "kb\\ms\\msoffice.md";
-        var mkdocs_page_url = "/kb/ms/msoffice/";
+        var mkdocs_page_name = "Dockingstationen";
+        var mkdocs_page_input_path = "kb\\dell\\delldocks.md";
+        var mkdocs_page_url = "/kb/dell/delldocks/";
       </script>
     
     <!--[if lt IE 9]>
@@ -49,29 +49,21 @@
               </ul>
               <p class="caption"><span class="caption-text">Knowledgebase</span></p>
               <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Microsoft</a>
-    <ul class="current">
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Office</a>
-    <ul class="current">
-    <li class="toctree-l3"><a class="reference internal" href="#c2r-installationen">C2R Installationen</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#download-source-files">Download Source Files</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#outlook">Outlook</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#deaktivieren-von-office-365-autodiscover-in-outlook">Deaktivieren von Office 365 Autodiscover in Outlook</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Microsoft</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ms/msoffice/">Office</a>
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Dell</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../dell/delldocks/">Dockingstationen</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Dell</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Dockingstationen</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#zurucksetzen-der-dockingstation">Zurücksetzen der Dockingstation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bios-einstellungen-fur-typ-c-dockingstationen">Bios Einstellungen für Typ-C Dockingstationen</a>
+    </li>
+    </ul>
                 </li>
     </ul>
                   </li>
@@ -95,8 +87,8 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
           <li class="breadcrumb-item">Knowledgebase</li>
-          <li class="breadcrumb-item">Microsoft</li>
-      <li class="breadcrumb-item active">Office</li>
+          <li class="breadcrumb-item">Dell</li>
+      <li class="breadcrumb-item active">Dockingstationen</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -105,43 +97,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="_1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Microsoft_Office_2013-2019_logo_and_wordmark.svg/800px-Microsoft_Office_2013-2019_logo_and_wordmark.svg.png" alt="drawing" width="350"/></h1>
+                <h1 id="_1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Dell-Logo.svg/1280px-Dell-Logo.svg.png" alt="drawing" width="350"/></h1>
 <hr />
-<h2 id="c2r-installationen">C2R Installationen</h2>
-<hr />
-<h3 id="download-source-files">Download Source Files</h3>
-<ol>
-<li>Download des Office Customization Tool (ODT) in einen Ordner der Wahl (z.B. "C:\office2019-pro-plus")</li>
-<li>Erstellen oder bearbeiten der Konfigurations-Datei (siehe Beispiel "configuration.xml" ) </li>
-<li></li>
-</ol>
-<pre><code class="language-xml">&lt;Configuration&gt;
-  &lt;Add SourcePath=&quot;C:\office2019-pro-plus&quot;     
-    OfficeClientEdition=&quot;64&quot;
-    Channel=&quot;PerpetualVL2021&quot; &gt;
-    &lt;Product ID=&quot;ProPlus2021Volume&quot;&gt;
-    &lt;Language ID=&quot;de-de&quot; /&gt;
-    &lt;Language ID=&quot;en-us&quot; /&gt;
-    &lt;/Product&gt;
-  &lt;/Add&gt;
-  &lt;Display Level=&quot;Full&quot; AcceptEULA=&quot;TRUE&quot; /&gt;  
-&lt;/Configuration&gt;
-</code></pre>
-<p>configuration.xml</p>
-<hr />
-<h2 id="outlook">Outlook</h2>
-<hr />
-<h3 id="deaktivieren-von-office-365-autodiscover-in-outlook">Deaktivieren von Office 365 Autodiscover in Outlook</h3>
+<h3 id="zurucksetzen-der-dockingstation">Zurücksetzen der Dockingstation</h3>
 <blockquote>
-<p>Wenn Sie ein Nicht-Office365-Postfach oder ein lokales Exchange-Postfach verwenden, versucht Outlook, Ihr Microsoft-Konto zu erkennen, auch wenn die AutoErmittlung nicht auf Microsoft 365 verweist. 
-Sie können diese Prüfung für einen lokalen Exchange Server deaktivieren. Gehen Sie zum Registrierungsschlüssel <code>HKEY_CURRENT_USER\Software \Microsoft\Office\16.0\Outlook\AutoDiscover</code> und erstellen Sie einen neuen DWORD-Parameter mit dem Namen <code>ExcludeExplicitO365Endpoint</code> und dem Wert <code>1</code>. Starten Sie Outlook neu.</p>
+<p>HINWEIS: Der Computer muss mit der Dockingstation verbunden sein, bevor Sie die Treiberupdates installieren.</p>
 </blockquote>
-<p>Mit dem folgenden Befehl können Sie Änderungen an der Registry vornehmen:</p>
-<pre><code class="language-batch">reg add HKEY_CURRENT_USER\Software\Microsoft\Office\x.0\Outlook\AutoDiscover /t REG_DWORD /v ExcludeExplicitO365Endpoint /d 1
-</code></pre>
-<p>oder mit dem Powershell cmdlet:</p>
-<pre><code class="language-powershell">Set-ItemProperty -Path &quot;HKCU:\Software\Microsoft\Office\16.0\Outlook\AutoDiscover&quot; -Name 'ExcludeExplicitO365Endpoint' -Value 1 -Type DWORD –Force
-</code></pre>
+<ol>
+<li>Entfernen Sie das USB-C- oder Thunderbolt-Kabel vom Computer.</li>
+<li>Trennen Sie die Netzstromversorgung von der Dockingstation der WD19 Serie.</li>
+<li>Leiten Sie eventuell noch vorhandenen Reststrom von der Dockingstation ab, indem Sie den Netzschalter 30 Sekunden lang gedrückt halten.</li>
+<li>Schließen Sie das Netzkabel an die Dockingstation an.</li>
+<li>Die LED am Netzschalter der Dockingstation sollte drei (3) Mal blinken.</li>
+<li>Schließen Sie das USB-C- oder Thunderbolt-Kabel wieder an den Computer an.</li>
+</ol>
+<h3 id="bios-einstellungen-fur-typ-c-dockingstationen">Bios Einstellungen für Typ-C Dockingstationen</h3>
+<ol>
+<li>Gehen Sie zu System Configuration und anschließend zu USB Configuration.</li>
+<li>Wählen Sie die Optionen Enable USB Boot Support (Unterstützung für Starten von USB aktivieren) und Enable External USB Port (Externen USB-Anschluss aktivieren).</li>
+<li>Navigieren Sie zu Dell Type-C Dock Configuration und wählen Sie Always Allow Dell Docks aus.</li>
+<li>Navigieren Sie unter System Configuration zu USB Power Share und aktivieren Sie diese Option.</li>
+<li>Navigieren Sie zu Thunderbolt Adapter Configuration und wählen Sie Enable Thunderbolt Technology Support, Enable Thunderbolt Adapter Boot Support und Enable Thunderbolt Adapter Preboot Modules.</li>
+<li>Wählen Sie in der gleichen Kategorie Security Level - No Security (Sicherheitsstufe "keine Sicherheit") aus.
+    &gt; HINWEIS: Die Elemente 5 und 6 gelten nur für Computer mit Thunderbolt-Controllern.</li>
+<li>Navigieren Sie jetzt zu POST Behavior und Fastboot. Wählen Sie Thorough (Vollständig).</li>
+<li>Klicken Sie unten rechts auf die Schaltfläche Apply, um die vorgenommenen Änderungen zu speichern. Beenden Sie das BIOS, indem Sie auf die Schaltfläche Exit (Verlassen) klicken.</li>
+</ol>
               
             </div>
           </div><footer>
@@ -166,10 +147,10 @@ Sie können diese Prüfung für einen lokalen Exchange Server deaktivieren. Gehe
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../../.." style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../../ms/msoffice/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../dell/delldocks/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../../about/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
