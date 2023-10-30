@@ -17,15 +17,15 @@ markdown_extensions:
   - toc:
       baselevel: "0"
       toc_depth: "1"
-      permalink: "permalink"
+      permalink: "⚓"
 
 nav:
   - home: 'index.md'
-  - knowledgebase:
+  - 'knowledgebase':
     - 'microsoft': 
-      - index: 'kb/ms/index.md'
+      - Index: 'kb/ms/index.md'
       - 'office': 'kb/ms/msoffice.md'
     - 'dell':
-      - index: 'kb/dell/index.md'
+      - Index: 'kb/dell/index.md'
       - 'dockingstationen': 'kb/dell/delldocks.md'
   - 'about': 'about.md'
