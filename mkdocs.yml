@@ -4,7 +4,12 @@ theme:
   name: readthedocs
   features:
   highlightjs: true
+  include_homepage_in_sidebar: false
   prev_next_buttons_location: none
+  collapse_navigation: false
+  titles_only: false
+  sticky_navigation: true
+  navigation_depth: 4
   hljs_languages:
     - yaml
     - rust
