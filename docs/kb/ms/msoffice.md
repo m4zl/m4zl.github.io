@@ -1,4 +1,4 @@
-# Microsoft Office — Guides
+# <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Microsoft_Office_2013-2019_logo_and_wordmark.svg/800px-Microsoft_Office_2013-2019_logo_and_wordmark.svg.png" alt="drawing" width="350"/>
 
 ***
 ## C2R Installationen
@@ -7,7 +7,7 @@
 
 ### Download Source Files
 
-1. Download des Office Customization Tool (ODT) in einen Ordner der Wahl (z.B. "C:\\office2019-pro-plus")
+1. Download des Office Customization Tool (ODT) in einen Ordner der Wahl (z.B. "C:\office2019-pro-plus")
 2. Erstellen oder bearbeiten der Konfigurations-Datei (siehe Beispiel "configuration.xml" ) 
 3. 
 
