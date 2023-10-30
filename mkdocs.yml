@@ -1,31 +1,55 @@
-site_name: Mazl`s Knowledgebase
+site_name: Mazl`s Index
 site_url: https://m4zl.github.io/
 theme: 
-  name: readthedocs
+  name: material
+  favicon: media/mazlbeer.png
+  logo: media/mazlbeer.png
+  language: de
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: 'Josefine Sans'
   features:
-  highlightjs: true
-  include_homepage_in_sidebar: false
-  prev_next_buttons_location: none
-  collapse_navigation: false
-  titles_only: false
-  sticky_navigation: true
-  navigation_depth: 4
-  hljs_languages:
-    - yaml
-    - rust
-    - powershell
-    - DOS
-  locale: de
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    #- navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    #- toc.integrate
+    - navigation.top
 
 markdown_extensions:
   - toc:
       permalink: "⚓"
 
+plugins:
+  - search
+
 nav:
-  - home: 'index.md'
-  - 'knowledgebase':
-    - 'microsoft': 
-      - 'office': 'kb/ms/msoffice.md'
-    - 'dell':
-      - 'dockingstationen': 'kb/dell/delldocks.md'
-  - 'about': 'about.md'
+  - Home: 'index.md'
+  - 'Knowledgebase':
+    - 'Microsoft': 
+      - 'Office': 'kb/ms/msoffice.md'
+    - 'Dell':
+      - 'Dockingstationen': 'kb/dell/delldocks.md'
+  - 'About': 'about.md'
