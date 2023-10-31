@@ -37,19 +37,38 @@ theme:
     - toc.follow
     #- toc.integrate
     - navigation.top
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
 
 markdown_extensions:
   - toc:
       permalink: "⚓"
+  - abbr
+  - admonition
+  - attr_list
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: true
+      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+
 
 plugins:
   - search
 
 nav:
   - Home: 'index.md'
-  - 'Knowledgebase':
-    - 'Microsoft': 
-      - 'Office': 'kb/ms/msoffice.md'
+  - 'IT - Wissendatenbank':
+    - kb/index.md
     - 'Dell':
       - 'Dockingstationen': 'kb/dell/delldocks.md'
+    - 'Microsoft': 
+      - 'Office': 'kb/ms/msoffice.md'
   - 'About': 'about.md'
