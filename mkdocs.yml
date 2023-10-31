@@ -39,7 +39,7 @@ theme:
     - navigation.top
     - content.code.copy
     - content.code.select
-    - content.tabs.link
+    - content.tabs.link 
 
 markdown_extensions:
   - toc:
@@ -69,6 +69,7 @@ nav:
     - kb/index.md
     - 'Dell':
       - 'Dockingstationen': 'kb/dell/delldocks.md'
-    - 'Microsoft': 
+    - 'Microsoft':
+      - kb/ms/index.md
       - 'Office': 'kb/ms/msoffice.md'
   - 'About': 'about.md'

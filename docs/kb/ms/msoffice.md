@@ -1,4 +1,4 @@
-#  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Microsoft_Office_2013-2019_logo_and_wordmark.svg/800px-Microsoft_Office_2013-2019_logo_and_wordmark.svg.png" alt="drawing" width="350"/>
+# <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Microsoft_Office_2013-2019_logo_and_wordmark.svg/800px-Microsoft_Office_2013-2019_logo_and_wordmark.svg.png" alt="drawing" width="350"/>
 
 ***
 ## C2R Installationen

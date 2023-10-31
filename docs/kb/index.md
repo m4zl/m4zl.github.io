@@ -1,3 +1,3 @@
 # IT - Wissensdatenbank
 
-[Dell](dell/delldocks.md){ .md-button } [Office](ms/msoffice.md){ .md-button }
+[Dell](dell/delldocks.md){ .md-button } [Microsoft](ms/index.md){ .md-button }
