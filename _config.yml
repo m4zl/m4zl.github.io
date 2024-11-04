@@ -19,12 +19,8 @@ phone: +1 234 567 890
 
 # social media links
 social:
-  github: username
-  instagram: username
-  linkedin: username
-  stackoverflow: 0000000/username
-  x: username
   discord: username
+
 # build settings
 permalink: pretty
 exclude:
