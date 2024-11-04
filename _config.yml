@@ -1,5 +1,5 @@
-title: m4zl.net
-description: Mazl´s CV.
+title: MazL
+description:
 baseurl: ""
 url: https://m4zl.github.io
 
@@ -11,11 +11,11 @@ tagshort:
 
 # author settings
 author:
-  name: Place Holder
-  email: username@domain.com
+  name: Mazl
+  email: 
 photo: assets/banner.png
-address: Foobar Hall 1.23
-phone: +1 234 567 890
+address: 
+phone: 
 
 # social media links
 social:
