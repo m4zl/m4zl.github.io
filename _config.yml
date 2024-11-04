@@ -24,7 +24,7 @@ social:
   linkedin: username
   stackoverflow: 0000000/username
   x: username
-  {% include svg/discord.svg %}
+  discord: username
 # build settings
 permalink: pretty
 exclude:
