@@ -4,6 +4,7 @@ baseurl: ""
 url: https://m4zl.github.io
 
 theme: cvless
+remote_theme: piazzai/cvless
 
 # site settings
 taglong: Jekyll theme for a beautiful online CV
@@ -32,3 +33,6 @@ exclude:
   - docker-compose.yml
   - LICENSE
   - README.md
+
+plugins:
+  - jekyll-remote-theme
