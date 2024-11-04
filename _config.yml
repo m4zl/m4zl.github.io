@@ -24,8 +24,7 @@ social:
   linkedin: username
   stackoverflow: 0000000/username
   x: username
-  {% include iconlink.html icon="svg/discord.svg" href="http://discord.m4zl.net/" %}
-
+  {% include svg/discord.svg %}
 # build settings
 permalink: pretty
 exclude:
