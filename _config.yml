@@ -1,25 +1,24 @@
-title: cvless
-description: Jekyll theme for a beautiful online CV
+title: m4zl.net
+description: Mazl´s CV.
 baseurl: ""
 url: https://m4zl.github.io
 
 remote_theme: piazzai/cvless
 
 # site settings
-taglong: Jekyll theme for a beautiful online CV
-tagshort: Jekyll theme
+taglong: 
+tagshort: 
 
 # author settings
 author:
   name: Place Holder
   email: username@domain.com
-photo: assets/files/photo.jpg
+photo: assets/banner.png
 address: Foobar Hall 1.23
 phone: +1 234 567 890
 
 # social media links
 social:
-  facebook: username
   github: username
   instagram: username
   linkedin: username
